@@ -14,43 +14,44 @@ const plans = [
     badge: 'Desde',
   },
   {
-    title: 'Funda de porcelana',
+    title: 'Corona de porcelana',
     price: '270€',
-    subtitle: 'Solución estética y resistente para proteger y mejorar el diente.',
+    subtitle: 'Solución estética y resistente para restaurar dientes dañados.',
     badge: 'Desde',
   },
   {
-    title: 'Funda de siliconio',
+    title: 'Férula dental',
     price: '420€',
-    subtitle: 'Opción funcional y adaptada según las necesidades de cada paciente.',
+    subtitle: 'Tratamiento personalizado para proteger tu dentadura y mejorar tu descanso.',
     badge: 'Desde',
   },
 ]
 
 const conditions = [
-  'Estos son solo algunos de nuestros precios más habituales.',
-  'Cada tratamiento requiere una valoración previa personalizada.',
-  'El presupuesto final puede variar según las necesidades de cada paciente.',
-  'Antes de comenzar, te explicaremos el tratamiento, las opciones disponibles y el precio final.',
-  'Consulta con la clínica para conocer más tratamientos y tarifas.',
+  'Estos son algunos de nuestros precios orientativos.',
+  'Cada tratamiento requiere una valoración clínica previa.',
+  'El presupuesto final puede variar según las necesidades del paciente.',
+  'Te explicaremos todas las opciones disponibles antes de comenzar.',
+  'Consulta con Dentopia para conocer más tratamientos y tarifas.',
 ]
 
 const Pricing = () => {
   return (
-    <section id="tarifas" className="scroll-mt-28 bg-[#f6fbf7] py-16">
+    <section id="tarifas" className="scroll-mt-28 bg-blue-50 py-16">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-12 max-w-3xl text-center">
-          <span className="inline-block rounded-full bg-green-700 px-5 py-2 text-sm font-bold text-white">
+          <span className="inline-block rounded-full bg-blue-700 px-5 py-2 text-sm font-bold text-white">
             Tarifas orientativas
           </span>
 
-          <h2 className="mt-5 text-3xl font-extrabold text-green-700 sm:text-4xl">
+          <h2 className="mt-5 text-3xl font-extrabold text-blue-800 sm:text-4xl">
             Algunos de nuestros precios
           </h2>
 
           <p className="mt-4 text-lg leading-8 text-neutral-600">
-            Queremos que tengas una referencia clara antes de venir. Estos
-            precios son orientativos y pueden variar según cada caso.
+            Queremos ofrecerte transparencia desde el primer momento. Estos
+            precios son orientativos y pueden ajustarse tras la valoración
+            personalizada.
           </p>
         </div>
 
@@ -58,19 +59,19 @@ const Pricing = () => {
           {plans.map((plan, index) => (
             <article
               key={index}
-              className="relative overflow-hidden rounded-2xl bg-white px-6 py-8 text-center shadow-[0_10px_30px_rgba(22,101,52,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(22,101,52,0.12)]"
+              className="relative overflow-hidden rounded-2xl bg-white px-6 py-8 text-center shadow-[0_10px_30px_rgba(37,99,235,0.08)] transition hover:-translate-y-1 hover:shadow-[0_15px_40px_rgba(37,99,235,0.12)]"
             >
               {plan.badge && (
-                <span className="absolute right-4 top-4 rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700">
+                <span className="absolute right-4 top-4 rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">
                   {plan.badge}
                 </span>
               )}
 
-              <h3 className="mt-6 text-xl font-extrabold text-green-700">
+              <h3 className="mt-6 text-xl font-extrabold text-blue-800">
                 {plan.title}
               </h3>
 
-              <p className="mt-5 text-5xl font-extrabold tracking-tight text-green-700">
+              <p className="mt-5 text-5xl font-extrabold tracking-tight text-blue-700">
                 {plan.price}
               </p>
 
@@ -81,15 +82,15 @@ const Pricing = () => {
           ))}
         </div>
 
-        <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-white px-8 py-8 shadow-[0_10px_30px_rgba(22,101,52,0.08)]">
-          <h3 className="text-center text-2xl font-extrabold text-green-700">
+        <div className="mx-auto mt-10 max-w-4xl rounded-2xl bg-white px-8 py-8 shadow-[0_10px_30px_rgba(37,99,235,0.08)]">
+          <h3 className="text-center text-2xl font-extrabold text-blue-800">
             Información importante
           </h3>
 
           <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {conditions.map((condition, index) => (
               <div key={index} className="flex items-start gap-3">
-                <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-green-100 text-sm font-bold text-green-700">
+                <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-blue-100 text-sm font-bold text-blue-700">
                   ✓
                 </span>
                 <p className="text-base leading-7 text-neutral-700">
@@ -102,7 +103,7 @@ const Pricing = () => {
           <div className="mt-8 text-center">
             <Link
               to="/tratamientos"
-              className="inline-flex rounded-xl bg-green-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-green-800"
+              className="inline-flex rounded-xl bg-blue-700 px-8 py-4 text-lg font-bold text-white shadow-lg transition hover:bg-blue-800"
             >
               Consultar más precios
             </Link>

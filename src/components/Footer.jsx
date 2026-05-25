@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-blue-950 text-white">
       <div className="mx-auto max-w-7xl px-4 py-14">
         <div className="grid gap-12 md:grid-cols-2 md:items-start">
           
@@ -13,25 +13,39 @@ const Footer = () => {
               <span className="block text-2xl font-extrabold text-white">
                 CLÍNICA DENTAL
               </span>
-              <span className="block text-green-600 text-lg font-semibold">
-                Dra. Anna Tavarone
+              <span className="block text-blue-400 text-lg font-semibold">
+                Dentopia
               </span>
             </div>
 
             <p className="max-w-2xl text-lg leading-relaxed text-white/90">
-              Clínica dental en Usera con más de 30 años de experiencia. 
-              Especialistas en tratamientos personalizados para cuidar tu salud 
-              bucodental y mejorar tu sonrisa.
+              Clínica dental en Arganzuela especializada en tratamientos
+              personalizados, odontología avanzada y atención cercana para cuidar
+              tu salud bucodental y mejorar tu sonrisa.
             </p>
 
             <div className="mt-8 flex items-center gap-5">
-              <a href="#" aria-label="Facebook" className="text-2xl text-green-600 transition hover:text-white">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="text-2xl text-blue-400 transition hover:text-white"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" aria-label="Instagram" className="text-2xl text-green-600 transition hover:text-white">
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="text-2xl text-blue-400 transition hover:text-white"
+              >
                 <FaInstagram />
               </a>
-              <a href="#" aria-label="LinkedIn" className="text-2xl text-green-600 transition hover:text-white">
+
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="text-2xl text-blue-400 transition hover:text-white"
+              >
                 <FaLinkedinIn />
               </a>
             </div>
@@ -39,29 +53,29 @@ const Footer = () => {
 
           {/* Contacto */}
           <div className="text-left md:text-right">
-            <h3 className="text-3xl font-bold text-green-600">Contacto</h3>
+            <h3 className="text-3xl font-bold text-blue-400">Contacto</h3>
 
             <div className="mt-6 space-y-4 text-lg leading-relaxed">
               <p>
-                C. de Nicolás Sánchez, 4, 1º Izquierda<br />
-                Usera, 28026 Madrid
+                Paseo de las Delicias<br />
+                Arganzuela, Madrid
               </p>
 
               <p>
                 <a
-                  href="tel:914763069"
-                  className="whitespace-nowrap font-bold text-white transition hover:text-green-600"
+                  href="tel:911680037"
+                  className="whitespace-nowrap font-bold text-white transition hover:text-blue-400"
                 >
-                  914 76 30 69
+                  911 68 00 37
                 </a>
               </p>
 
               <p>
                 <a
-                  href="mailto:info@clinicadentalannarone.com"
-                  className="text-green-600 transition hover:text-white"
+                  href="https://wa.me/34660058377"
+                  className="text-blue-400 transition hover:text-white"
                 >
-                  info@clinicadentalannarone.com
+                  WhatsApp: +34 660 05 83 77
                 </a>
               </p>
             </div>
@@ -76,7 +90,7 @@ const Footer = () => {
 
           <Link
             to="/#contacto"
-            className="rounded-xl bg-green-600 px-8 py-3 text-lg font-bold text-white transition hover:bg-green-700"
+            className="rounded-xl bg-blue-600 px-8 py-3 text-lg font-bold text-white transition hover:bg-blue-700"
           >
             Solicitar cita
           </Link>
@@ -85,10 +99,10 @@ const Footer = () => {
         {/* Footer bottom */}
         <div className="mt-12 border-t border-white/15 pt-8 text-center">
           <p className="text-base text-white/80">
-            © 2026 Clínica Dental Dra. Anna Tavarone. Todos los derechos reservados.
+            © 2026 Clínica Dental Dentopia. Todos los derechos reservados.
           </p>
 
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-green-600">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-blue-400">
             <Link to="/legal" className="transition hover:text-white">
               Aviso legal · Privacidad · Cookies
             </Link>

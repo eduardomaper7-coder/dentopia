@@ -2,14 +2,16 @@ import { useEffect, useState } from 'react'
 
 const slides = [
   {
-    image: '/clinica-dental-usera-interior.jpeg',
-    alt: 'Interior de la Clínica Dental Dra. Anna Tavarone en Usera',
-    badge: 'Clínica dental en Usera con atención cercana y profesional',
+    image:
+      'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Interior moderno de Clínica Dental Dentopia en Arganzuela',
+    badge: 'Clínica dental en Arganzuela con tecnología avanzada',
   },
   {
-    image: '/dra-anna-tavarone-clinica-dental-usera.png',
-    alt: 'Clínica Dental Dra. Anna Tavarone en Usera',
-    badge: 'Más de 30 años cuidando sonrisas en Usera',
+    image:
+      'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Tratamiento dental en Clínica Dental Dentopia',
+    badge: 'Atención personalizada para cuidar tu sonrisa',
   },
 ]
 
@@ -25,66 +27,66 @@ const WhyUs = () => {
   }, [])
 
   return (
-    <section className="bg-[#f6fbf7] py-16">
+    <section className="bg-blue-50 py-16">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 lg:grid-cols-2">
         <div className="relative">
-          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-green-700 lg:block [writing-mode:vertical-rl]">
-            Dra. Anna Tavarone
+          <span className="absolute -left-10 top-0 hidden rotate-180 text-xs font-bold uppercase tracking-[0.4em] text-blue-700 lg:block [writing-mode:vertical-rl]">
+            Clínica Dental Dentopia
           </span>
 
           <div className="max-w-xl">
-            <span className="inline-block rounded-full bg-green-700 px-5 py-2 text-sm font-bold text-white">
+            <span className="inline-block rounded-full bg-blue-700 px-5 py-2 text-sm font-bold text-white">
               Nuestro valor
             </span>
 
-            <h2 className="mt-5 text-4xl font-extrabold leading-tight text-green-700 sm:text-5xl">
-              ¿Por qué elegir nuestra clínica?
+            <h2 className="mt-5 text-4xl font-extrabold leading-tight text-blue-800 sm:text-5xl">
+              ¿Por qué elegir Dentopia?
             </h2>
 
             <p className="mt-6 text-lg leading-9 text-neutral-700">
-              En Clínica Dental Dra. Anna Tavarone cuidamos tu salud bucodental
-              con una atención cercana, tratamientos personalizados y un trato
-              profesional de confianza.
+              En Clínica Dental Dentopia combinamos experiencia, tecnología y
+              cercanía para ofrecerte tratamientos dentales personalizados en
+              Arganzuela.
             </p>
 
             <div className="mt-8 space-y-6">
               <div>
-                <h3 className="text-2xl font-extrabold text-green-700">
-                  Más de 30 años en Usera
+                <h3 className="text-2xl font-extrabold text-blue-800">
+                  Tecnología avanzada
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Nuestra experiencia nos permite ofrecer soluciones dentales
-                  adaptadas a cada paciente.
+                  Utilizamos equipamiento moderno para diagnósticos precisos y
+                  tratamientos eficaces.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-green-700">
+                <h3 className="text-2xl font-extrabold text-blue-800">
                   Atención personalizada
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Estudiamos cada caso para recomendar el tratamiento dental más
-                  adecuado.
+                  Cada paciente recibe un plan de tratamiento adaptado a sus
+                  necesidades.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-green-700">
-                  Trato cercano
+                <h3 className="text-2xl font-extrabold text-blue-800">
+                  Trato cercano y profesional
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Queremos que te sientas cómodo, escuchado y seguro desde la
-                  primera visita.
+                  Queremos que te sientas cómodo y acompañado durante todo el
+                  proceso.
                 </p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-extrabold text-green-700">
+                <h3 className="text-2xl font-extrabold text-blue-800">
                   Salud y estética dental
                 </h3>
                 <p className="mt-2 text-lg text-neutral-600">
-                  Trabajamos para mejorar tanto la salud de tu boca como la
-                  estética de tu sonrisa.
+                  Mejoramos la funcionalidad y estética de tu sonrisa con
+                  tratamientos integrales.
                 </p>
               </div>
             </div>
@@ -92,7 +94,7 @@ const WhyUs = () => {
         </div>
 
         <div className="relative">
-          <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(22,101,52,0.18)]">
+          <div className="relative overflow-hidden rounded-[32px] shadow-[0_20px_60px_rgba(37,99,235,0.18)]">
             <div className="relative h-[500px] w-full">
               {slides.map((slide, index) => (
                 <img
@@ -107,17 +109,17 @@ const WhyUs = () => {
                 />
               ))}
 
-              <div className="absolute inset-0 bg-green-900/20"></div>
+              <div className="absolute inset-0 bg-blue-900/20"></div>
 
               <div className="absolute left-6 top-6 z-10 max-w-sm rounded-2xl bg-white/95 px-5 py-4 shadow-lg backdrop-blur-sm">
-                <p className="text-base font-bold leading-7 text-green-700">
+                <p className="text-base font-bold leading-7 text-blue-700">
                   {slides[currentSlide].badge}
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-green-700"></div>
+          <div className="absolute -bottom-6 -left-6 h-28 w-28 rounded-[28px] bg-blue-700"></div>
 
           <div className="mt-6 flex items-center justify-center gap-3">
             {slides.map((_, index) => (
@@ -126,7 +128,7 @@ const WhyUs = () => {
                 type="button"
                 onClick={() => setCurrentSlide(index)}
                 className={`h-3 w-3 rounded-full transition ${
-                  currentSlide === index ? 'bg-green-700' : 'bg-black/20'
+                  currentSlide === index ? 'bg-blue-700' : 'bg-black/20'
                 }`}
                 aria-label={`Ir a imagen ${index + 1}`}
               />
